@@ -4,94 +4,60 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeo6bJpblhFE1Z87n3G19kC2DG6VnpP0JWnxrI8ii8eKG9K2" 
-        crossorigin="anonymous"
-        rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-        rel = "stylesheet" href = "css/style.css">
-    >
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Deevesh Luximon - CV</title>
 </head>
 <body>
-    <style>
-    body {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    text-align: center;
-    }
-    .profile-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    }
-    .section-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    border-bottom: 2px solid #0d6efd;
-    margin-bottom: 1rem;
-    padding-bottom: .5rem;
-    }
-    .navbar{
-    margin: 1rem;
-    background-color: rgb(100, 2, 92);
-    height:7%;
-    width:100%;
-    border-bottom: 10px solid #fd0d35;
-    position: fixed;
-    border-bottom-right-radius:40%;
-    border-top-right-radius:40%; 
-    }
-    .nav-item{
-    margin: 1rem;
-    font-weight:bold;
-    font-style: italic;
-    font-size: 18px;
     
-    }
-    ul{
-    justify-content: center;
-    list-style:circle;
-
-    }
-
-    
-
-    </style>
-    <nav id = "nav" class = "navbar rounded">
-        <div class = "container text-wrap">
-            <ul class = "nav container-fluid text-center">
-                <li class = "nav-item">
-                    <a class = "" href="#profile">Profile</a>
-                </li>
-                <li class = "nav-item">
-                    <a class = "" href="#Experience">Experience</a>
-                </li>
-                <li class = "nav-item">
-                  <a class = "" href="#ed">Education</a>
-                </li>
-                <li class = "nav-item">
-                  <a class = "" href="#skills">Skills</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">Deevesh Luximon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#cvNavbar" aria-controls="cvNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="cvNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#profile">Profile</a>
               </li>
-                <li class = "nav-item">
-                    <a class = "" href="#lanuages">Languages</a>
-                </li>
-                <li class = "nav-item">
-                  <a class = "" href="details.html">Bootstrap Used</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#languages">Languages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#references">References</a>
               </li>
             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
+      
     
     <div class="container my-5 p-4 bg-white shadow-sm rounded">
         <div class="row align-items-center">
             <div class="col-md-3 text-center mb-3 mb-md-0">
-                <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img rounded-circle border border-3 border-primary">
+                <img src="images/gf8129ve434e1.png" alt="Profile Picture" class="profile-img">
             </div>
             <div class="col-md-9">
                 <h1 class="display-4">Deevesh Luximon</h1>
@@ -138,16 +104,204 @@
         </div>
 
         <!-- Education Section -->
-        <div class="mb-5">
+        <div class="mb-3 display-10">
             <h2 class="section-title">Education</h2>
-            <div class="mb-4">
-                <h5 class="mb-0">B.S. in Computer Science <span class="text-muted fw-normal">@ MIT</span></h5>
-                <p class="text-muted">2020 – 2025 | TUD Tallaght</p>
-                <ul>
-                    <li>Graduated with a 3.8 GPA, focusing on software engineering and machine learning.</li>
-                    <li>Completed a senior capstone project on scalable microservice architecture.</li>
-                </ul>
-            </div>
+
+            <div class="col">
+                <div class="collapse multi-collapse show" id="fourth">
+                  <div class="card card-body mt-3">
+                      <ul class="subjectList">
+                        <h5 class="text-center">4th Year Results</h5>
+                        <hr>
+                        <li class="pb-2 listSpace">
+                          <span>Interactive Media Design</span>
+                          <span>TBC</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Enterprise Performance Architecture</span>
+                          <span>TBC</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Applied Machine Learning</span>
+                          <span>TBC</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Enterprise App Development</span>
+                          <span>TBC</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Information Management</span>
+                          <span>TBC</span>
+                        </li>
+                      </ul>
+  
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="collapse multi-collapse" id="third">
+                  <div class="card card-body mt-3">
+                    <div class = "col">
+                      <ul class="subjectList">
+                        <h5 class="text-center">3rd Year Results</h5>
+                        <hr>
+                        <li class="pb-2 listSpace">
+                          <span>Server-side Web Development</span>
+                          <span>B</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Operating Systems</span>
+                          <span>C</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Cloud Service and Distributed Computing</span>
+                          <span>C</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Big Data Technologies</span>
+                          <span>C</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Data Structures and Algorithms</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Data Analysis</span>
+                          <span>B</span>
+                        </li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="collapse multi-collapse" id="second">
+                  <div class="card card-body mt-3">
+                    <div class = "col">
+                      <ul class="subjectList">
+                        <h5 class="text-center">2nd Year Results</h5>
+                        <hr>
+                        <li class="pb-2 listSpace">
+                          <span>Client Side Web Development</span>
+                          <span>B</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Discrete Mathematics 2</span>
+                          <span>A</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Advanced Database Technologies</span>
+                          <span>B</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Network Fundamentals</span>
+                          <span>B</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Software Quality Assurance and Testing</span>
+                          <span>B</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Software Development 3</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Information Security</span>
+                          <span>B</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Database Admin and Analysis</span>
+                          <span>B</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Management Science</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Routing and Switching Essentials</span>
+                          <span >B</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Software Development 4</span>
+                          <span >B</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Project</span>
+                          <span >A</span>
+                        </li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col">
+                <div class="collapse multi-collapse" id="first">
+                  <div class="card card-body mt-3">
+                    <div class = "col">
+                      <ul class="subjectList">
+                        <h5 class="text-center">1st Year Results</h5>
+                        <hr>
+                        <li class="pb-2 listSpace">
+                          <span>Critical Skills Development</span>
+                          <span>A</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Discrete Mathematics 1</span>
+                          <span>B</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Business and Information Systems</span>
+                          <span>A</span>
+                        </li>
+                        <li class="pb-2 listSpace">
+                          <span>Visual Design and User Experience</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Computer Architecture</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Software Development 1</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Operating Systems Fundamentals</span>
+                          <span>B</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Database Fundamentals</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Statistics</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Social Media Communications</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Systems Analysis</span>
+                          <span>A</span>
+                        </li>
+                        <li class="listSpace">
+                          <span>Software Development 2</span>
+                          <span>B</span>
+                        </li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
         </div>
 
         <!-- Skills Section -->
